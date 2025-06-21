@@ -1,7 +1,7 @@
-# dillards-inp
+# Inp Fix Demo
 
-Sample project to show inp issues in the dillards.com mobile home page
+Sample project to show IMP issues in the dillards.com mobile web home page.
 
-Start with `Jira - Requirements.md` and then view `Solution.md`
+Please view [Jira - Requirements.md](./Jira%20-%20Requirements.md) and then [Solution.md](./Solution.md)
 
 
