@@ -11,8 +11,9 @@ The INP metric is a measure of how quick a website responds to user interactions
 - Websites that don’t respond within 200 ms lead to user frustration and abandonment, reducing conversion rates. Even a delay as short as the duration of a blink can create a perception of unresponsiveness. Modern users expect immediate feedback, any interaction above 200 ms qualifies as a “long interaction” and should be addressed via root cause analysis.
 - It's also been shown that users that experience usability frustration are less likely to have return vists.
 
-#### Recommended Solution:
+#### Recommended Solutions:
 - Analyze the live production code and identify interactions exceeding 200 ms. Inspect the call stacks for operations triggering expensive browser tasks such as "Layout" (called "Reflow" in Firefox).
+- Break up long runing tasks into smaller Javascript chunks
 See [solutions.md](./Solution.md) for a detailed breakdown and specific code recommendations.
 
 
