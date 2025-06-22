@@ -29,7 +29,7 @@ The INP metric is a measure of how quick a website responds to user interactions
 #### Confidence:
 
 - The recommended techniques — such as using requestAnimationFrame and setTimeout() to yield to the main thread are well supported in Chrome and Safari.
-- While Safari doesn’t report INP, its users still experience jank if performance is poor. These solutions are aligned with best practices across modern browsers.
+- While Safari doesn’t report INP, its users will still experience jank if performance is poor. These solutions are aligned with best practices across modern browsers.
 
 #### Effort:
 - Issue #1: Medium effort. It involves locating multiple read/write calculation calls and resolving layout thrashing issues. This is more mechanical but likely require many changes throughout the system code.
