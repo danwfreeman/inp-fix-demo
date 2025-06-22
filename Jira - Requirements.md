@@ -34,7 +34,7 @@ The INP metric is a measure of how quick a website responds to user interactions
 #### Effort:
 - Issue #1: Medium effort. It involves locating multiple read/write calculation calls and resolving layout thrashing issues. This is more mechanical but likely require many changes throughout the system code.
 
-- Issue #2: Medium effort. The developer must locate the relevant functions in dillards.js (see `solutions.md`) and apply setTimeout() or other main-thread yielding methods. This will require local testing and iteration.
+- Issue #2: Medium effort. The developer must locate the relevant functions in dillards.js (see `solutions.md`) and apply setTimeout() to allow for main thread yielding. This will require iterating on local testing to ensure long tasks are reduced significantly in the performance profiles
 
 #### Code Snippet:
 - see /src/ for the 2 .js files that contain the current code and suggested new code as snippets
