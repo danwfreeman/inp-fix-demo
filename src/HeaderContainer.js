@@ -26,7 +26,7 @@ handleDropDownMenuPosition() {
 
 // proposed implementation:
 handleDropDownMenuPosition() {
-    // just exit early to keep code cleaner
+    // exit early to keep code cleaner
     if (!window.ResizeObserver) {
         console.log("Resize observer not supported!");
         return;
@@ -40,10 +40,10 @@ handleDropDownMenuPosition() {
     const menuWrapper = document.getElementById("menu_wrapper");
     const headerIcons = document.getElementById("header_icons");
 
-    // the original code assumes if we have 'menu_wrapper' then we have 'header_icons', but safe to say we need both, so extra check ok
+    // the original code assumes if we have 'menu_wrapper' then we have 'header_icons', but safe to say we need both, so the extra check is ok
     if (!menuWrapper || !headerIcons) return;
 
-    // to avoid layout thrashing we want to do our reads first, then all writes and also deferred
+    // to avoid layout thrashing we want to do our reads first, then all writes and also defer them
     const headerBottom = headerIcons.getBoundingClientRect().bottom;
 
     // defer DOM writes to avoid thrashing
