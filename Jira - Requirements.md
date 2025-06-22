@@ -13,7 +13,7 @@ The INP metric is a measure of how quick a website responds to user interactions
 
 #### Recommended Solutions:
 - Analyze the live production code and identify interactions exceeding 200 ms. Inspect the call stacks for operations triggering expensive browser tasks such as "Layout" (called "Reflow" in Firefox).
-- Break up long runing tasks into smaller Javascript chunks
+- Break up long running tasks into smaller Javascript chunks.
 - See [solutions.md](./Solution.md) for a detailed breakdown and specific code recommendations.
 
 
