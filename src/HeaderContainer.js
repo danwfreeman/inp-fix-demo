@@ -46,7 +46,7 @@ handleDropDownMenuPosition() {
     // to avoid layout thrashing we want to do our reads first, then all writes and also deferred
     const headerBottom = headerIcons.getBoundingClientRect().bottom;
 
-    // Defer DOM writes to avoid thrashing
+    // defer DOM writes to avoid thrashing
     requestAnimationFrame(() => {
         menuWrapper.style.paddingTop = `${headerBottom}px`;
         menuWrapper.style.overflow = "scroll";
@@ -55,7 +55,7 @@ handleDropDownMenuPosition() {
     window.dropdownResizeHandler = () => {
         const mobileTitleBar = document.getElementById("mobile_title_bar");
 
-        // Again we do our reads first
+        // do our reads first
         const paddingTop = mobileTitleBar
             ? mobileTitleBar.getBoundingClientRect().bottom
             : headerIcons.getBoundingClientRect().bottom;
