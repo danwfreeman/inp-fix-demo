@@ -2,7 +2,7 @@
 
 [Dillards.com](https://www.dillards.com) for mobile web has a poor INP score.  The following is a plan, with actionable steps, to improve the INP score.
 
-The focus in on the mobile web version of the website focused on the interactions for the home page primarily.
+The focus in on the mobile web version of the website and on the interactions for the home page primarily.
 
 The INP metric is a measure of how quick a website responds to user interactions.  The INP value is the highest time, for a paint to occur, of all in page interactions.
 
