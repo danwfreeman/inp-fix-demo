@@ -1,4 +1,4 @@
-# INP Improvment Plan
+# INP Improvement Plan
 
 [Dillards.com](https://www.dillards.com) for mobile web has a poor INP score.  The following is a plan, with actionable steps, to improve the INP score.
 
